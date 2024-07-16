@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/skitter.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+
+</head>
+
+<body class="body">
+    
+    <div class=" spinner d-flex justify-content-center align-items-center">
+      <span class="loader"></span>
+    </div>
+
+    <div class="container c1 px-0  mt-5">
+        <div class="title  d-flex flex-row align-items-center justify-content-center ">
+            <h1>Customers</h1>
+        </div>
+        <div class="content d-flex flex-row align-items-center justify-content-center">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                Customers your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+        </div>
+
+        <div class="mb-4 f1">
+            <label for="bookmarkName" class="pb-2 fw-label">Search by customer</label>
+            <input type="text" oninput="searchByCustomer(this)" class="form-control fw-medium mb-3  " id="websiteName" placeholder="Customer Name"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3 f2">
+            <label for="bookmarkURL" class="pb-2 fw-label">Search by transactions</label>
+            <input type="text" oninput="searchByTransactions(this)" class="form-control fw-medium mb-3" placeholder="Transactions amount" id="websiteUrl">
+            
+          </div>
+        
+
+
+    </div>
+    <div class=" tb d-none   ">
+      <div class="title2  mt-5  d-flex flex-row align-items-center justify-content-center ">
+        <h1 class="option-title"></h1>
+        <i class="fas fa-times close-icon"></i>
+      </div>
+      <div class="chart d-flex justify-content-center align-items-center">
+        <canvas id="myChart" class="bg-white p-4 rounded-3 d-none " style="width:100%;max-width:700px"></canvas>
+      </div>
+      
+        <table class="table mt-4 text-center d-none bg-light">
+            <thead>
+                <tr>
+                    <th class="text-capitalize">Index</th>
+                    <th class="text-capitalize">Customer</th>
+                    <th class="text-capitalize">transactions date</th>
+                    <th class="text-capitalize">transactions amount</th>
+                </tr>
+            </thead>
+            <tbody id="tableContent">
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="container pb-5 ">
+      <div class="row d-flex justify-content-center align-items-center customers ">
+        
+        
+        
+      </div>
+      
+      
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
